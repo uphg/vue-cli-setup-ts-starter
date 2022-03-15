@@ -5,8 +5,3 @@
     <Count />
   </div>
 </template>
-
-<script setup lang="ts">
-import Count from '@/components/Count.vue';
-import HelloWorld from '@/components/HelloWorld.vue';
-</script>
