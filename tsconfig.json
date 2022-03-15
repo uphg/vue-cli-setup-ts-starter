@@ -12,8 +12,10 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "noUnusedLocals": true,
     "types": [
-      "webpack-env"
+      "webpack-env",
+      "unplugin-vue2-script-setup/types"
     ],
     "paths": {
       "@/*": [
@@ -26,6 +28,9 @@
       "dom.iterable",
       "scripthost"
     ]
+  },
+  "vueCompilerOptions": {
+    "experimentalCompatMode": 2
   },
   "include": [
     "src/**/*.ts",
