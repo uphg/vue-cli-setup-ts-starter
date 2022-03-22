@@ -1,5 +1,6 @@
 const ScriptSetup = require('unplugin-vue2-script-setup/webpack').default
 const VueComponents = require('unplugin-vue-components/webpack')
+const { ElementUiOndemand } = require('./plugins/index')
 
 module.exports = {
   parallel: false,  // disable thread-loader, which is not compactible with this plugin
@@ -11,9 +12,10 @@ module.exports = {
         dirs: ['src/components'],
         // 文件后缀
         extensions: ['vue'],
-        // 深度
-        deep: true,
-      }),
+        resolvers: [
+          ElementUiOndemand({ importStyle: 'css' })
+        ]
+      })
     ]
   },
   chainWebpack(config) {

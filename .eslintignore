@@ -1,4 +1,5 @@
 src/assets
 public
+plugins
 dist
 vue.config.js

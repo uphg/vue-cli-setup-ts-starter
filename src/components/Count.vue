@@ -1,7 +1,7 @@
 <template>
   <div class="count">
     <p>{{ count }}</p>
-    <button @click="count += 1">点击+1</button>
+    <el-button @click="count += 1">点击+1</el-button>
   </div>
 </template>
 
