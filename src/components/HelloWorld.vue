@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p></p>
+    <el-link type="primary">主要链接</el-link>
   </div>
 </template>
 

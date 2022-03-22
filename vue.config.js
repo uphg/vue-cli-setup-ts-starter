@@ -13,7 +13,9 @@ module.exports = {
         // 文件后缀
         extensions: ['vue'],
         resolvers: [
-          ElementUiOndemand({ importStyle: 'css' })
+          ElementUiOndemand({
+            importStyle: 'css'
+          })
         ]
       })
     ]

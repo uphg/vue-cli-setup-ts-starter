@@ -8,6 +8,7 @@ module.exports = {
         if (/^El[A-Z]/.test(name)) {
           const compName = name.slice(2)
           const partialName = kebabCase(compName)
+
           if (partialName === 'collapse-transition') {
             return {
               path: `element-ui/lib/transitions/${partialName}`,
